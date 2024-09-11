@@ -1,0 +1,92 @@
+{
+  "================== Etiquetas de páginas ==================" : "",
+  "login":{
+    "titulo": "Electoral Register",
+    "usuario": "User",
+    "contrasenna": "Password",
+    "ingresar": "Log in",
+    "ts":{
+      "ingresarUsuarioContrasena": "You must enter your user name and password"
+    }
+  },
+  "ciudadanos": {
+    "titulo": "Citizens information",
+    "ejemploParametro": "View {{value}} is the current one",
+    "ingreseCedula": "Enter the citizen ID number",
+    "buscar": "Search",
+    "buscarTodos": "Search all",
+    "ingresarCiudadano": "Enter citizen",
+    "ts": {
+      "debeIngresarCedulaValida": "You must enter a valid ID number"
+    }
+  },
+
+  "================== Etiquetas de componentes ==================" : "",
+  "header": {
+    "cerrarSesion": "Log out"
+  },
+  "lista-ciudadanos-component": {
+    "cedula": "ID Number",
+    "apellido1": "Last name 1",
+    "apellido2": "Last name 2",
+    "nombre": "Name",
+    "fechaCaducidad": "Expiration Date",
+    "junta": "Board",
+    "verDireccionElectoral": "See Electoral Address"
+  },
+  "datos-ciudadano-component": {
+    "cedula": "ID Number",
+    "apellido1": "Last name 1",
+    "apellido2": "Last name 2",
+    "nombre": "Name",
+    "fechaCaducidad": "Expiration Date",
+    "junta": "Board",
+    "direccionElectoral": "Electoral Address",
+    "provincia": "Province",
+    "canton": "Canton",
+    "distrito": "Disctrit"
+  },
+  "ingresar-ciudadano-component": {
+    "cedula": "ID Number",
+    "apellido1": "Last name 1",
+    "apellido2": "Last name 2",
+    "nombre": "Name",
+    "fechaCaducidad": "Expiration Date",
+    "junta": "Board",
+    "ingresar": "Enter"
+  },
+  "modal-direccion-electoral-component": {
+    "direccionElectoral": "Electoral Address",
+    "provincia": "Province",
+    "canton": "Canton",
+    "distrito": "Disctrit",
+    "observaciones": "Comments",
+    "confirmar": "Confirm"
+  },
+
+  "================== Etiquetas de servicios ==================" : "",
+  "authenticacionService": {
+    "errorAutenticacion": "An error occurred while authenticating"
+  },
+  "ciudadanoService": {
+    "errorConsultarTodos": "An error occurred while consulting citizens",
+    "errorConsultarId": "An error occurred while consulting citizen",
+    "errorInsertar": "An error occurred while inserting citizen"
+  },
+  "direccionElectoralService": {
+    "errorConsultarTodos": "An error occurred while consulting electoral directions",
+    "errorConsultarId": "An error occurred while consulting electoral direction"
+  },
+  "loading": {
+    "cargando": "Loading",
+    "espere": "Wait please",
+    "consultando": "Consulting",
+    "procesando": "Processing",
+    "login": "Logging in"
+  },
+
+  "================== Lista de errores BL ==================" : "",
+  "Gen_0": "Unknown error",
+  "AdmUsuario_1_Usuario": "The given user already exists",
+  "AdmCiudadano_0_Usuario": "Added error to test responses with BLException from Padron_AppWeb"
+}

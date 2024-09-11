@@ -1,0 +1,40 @@
+/*
+*	ESTE ARCHIVO FUE CREADO PARA INCORPORAR ESTILOS PERSONALIZADOS 
+*	SE DEBEN INCORPORAR REGLAS DE ESTILO QUE APLIQUEN A TOAST, BARRAS DE CARGA, ALERTS O DE ESE TIPO
+*/
+
+// BARRAS DE CARGA
+.base-spinner {
+  svg{
+    circle{
+      stroke: $red;
+    }
+  }
+}
+
+// ALERTS
+.alert-danger{
+  background: rgba(237, 27, 52, .3);
+}
+
+// TOASTS
+.base-toast{
+  &.ngx-toastr{
+    border-radius: $base-border-radius;
+  }
+
+  .toast-title{
+    @extend .titulo-1;
+  }
+  .toast-message{
+    @extend .subtitulo;
+  }
+}
+.toast-success{
+  @extend .base-toast;
+  background-color: $green;
+}
+.toast-error{
+  @extend .base-toast;
+  background-color: $red;
+}

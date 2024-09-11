@@ -1,0 +1,92 @@
+{
+  "================== Etiquetas de páginas ==================" : "",
+  "login":{
+    "titulo": "Padrón Electoral",
+    "usuario": "Usuario",
+    "contrasenna": "Contraseña",
+    "ingresar": "Ingresar",
+    "ts":{
+      "ingresarUsuarioContrasena": "Debe ingresar su nombre de usuario y contraseña"
+    }
+  },
+  "ciudadanos": {
+    "titulo": "Información de ciudadanos",
+    "ejemploParametro": "La vista {{value}} es la actual",
+    "ingreseCedula": "Ingrese la cédula del ciudadano",
+    "buscar": "Buscar",
+    "buscarTodos": "Buscar todos",
+    "ingresarCiudadano": "Ingresar ciudadano",
+    "ts": {
+      "debeIngresarCedulaValida": "Debe ingresar un número de cédula válido"
+    }
+  },
+
+  "================== Etiquetas de componentes ==================" : "",
+  "header": {
+    "cerrarSesion": "Cerrar sesión"
+  },
+  "lista-ciudadanos-component": {
+    "cedula": "Cedula",
+    "apellido1": "Apellido1",
+    "apellido2": "Apellido2",
+    "nombre": "Nombre",
+    "fechaCaducidad": "Fecha Caducidad",
+    "junta": "Junta",
+    "verDireccionElectoral": "Ver Dirección Electoral"
+  },
+  "datos-ciudadano-component": {
+    "cedula": "Cedula",
+    "apellido1": "Apellido1",
+    "apellido2": "Apellido2",
+    "nombre": "Nombre",
+    "fechaCaducidad": "Fecha Caducidad",
+    "junta": "Junta",
+    "direccionElectoral": "Dirección Electoral",
+    "provincia": "Provincia",
+    "canton": "Cantón",
+    "distrito": "Distrito"
+  },
+  "ingresar-ciudadano-component": {
+    "cedula": "Cedula",
+    "apellido1": "Apellido1",
+    "apellido2": "Apellido2",
+    "nombre": "Nombre",
+    "fechaCaducidad": "Fecha Caducidad",
+    "junta": "Junta",
+    "ingresar": "Ingresar"
+  },
+  "modal-direccion-electoral-component": {
+    "direccionElectoral": "Dirección Electoral",
+    "provincia": "Provincia",
+    "canton": "Cantón",
+    "distrito": "Distrito",
+    "observaciones": "Observaciones",
+    "confirmar": "Confirmar"
+  },
+
+  "================== Etiquetas de servicios ==================" : "",
+  "authenticacionService": {
+    "errorAutenticacion": "Ocurrió un error al autenticar"
+  },
+  "ciudadanoService": {
+    "errorConsultarTodos": "Ocurrió un error al consultar los ciudadanos",
+    "errorConsultarId": "Ocurrió un error al consultar el ciudadano",
+    "errorInsertar": "Ocurrió un error al insertar el ciudadano"
+  },
+  "direccionElectoralService": {
+    "errorConsultarTodos": "Ocurrió un error al consultar las direcciones electorales",
+    "errorConsultarId": "Ocurrió un error al consultar la dirección electoral"
+  },
+  "loading": {
+    "cargando": "Cargando",
+    "espere": "Espere por favor",
+    "consultando": "Consultando",
+    "procesando": "Procesando",
+    "login": "Iniciando sesión"
+  },
+
+  "================== Lista de errores BL ==================" : "",
+  "Gen_0": "Error desconocido",
+  "AdmUsuario_1_Usuario": "El usuario indicado ya existe",
+  "AdmCiudadano_0_Usuario": "Error agregado para probar las respuestas con BLException desde Padron_AppWeb"
+}

@@ -1,0 +1,20 @@
+/*
+*	ESTE ARCHIVO FUE CREADO PARA INCORPORAR ESTILOS PERSONALIZADOS 
+*	SE DEBEN INCORPORAR SOLAMENTE FUNCIONES MIXINS
+*/
+
+// Estiliza el texto con tamaño, altura y peso
+@mixin textStyle($font-size, $line-height, $font-weight: normal){
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
+
+//Mixing para limitar texto a 3 lineas
+@mixin text-limit($lines: 3) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+}

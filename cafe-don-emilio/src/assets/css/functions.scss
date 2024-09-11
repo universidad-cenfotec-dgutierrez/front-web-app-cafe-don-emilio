@@ -1,0 +1,30 @@
+@use "sass:math";
+@use "sass:color";
+
+//Toma como parametro un color y lo convierte en un string que puede ser usado en una url
+@function url-encode-color($color) {
+  @return str-replace("#{inspect($color)}", "#", "%23");
+}
+
+//Toma como parametro un color y un porcentaje de opacidad y retorna el color con la opacidad aplicada
+@function color-alpha($color, $alpha-percentage) {
+  // Utilizar math.div para dividir
+  $alpha: math.div($alpha-percentage, 100);
+  // Retornar el color con el alfa aplicado
+  @return rgba($color, $alpha);
+}
+
+// Función para crear un fondo con degradado sobre un color
+@function gradient-overlay($base-color, $overlay-color, $alpha-percentage) {
+  $alpha: math.div($alpha-percentage, 100);
+  // Crear el color RGBA para el overlay
+  $overlay-color-alpha: color.change($overlay-color, $alpha: $alpha);
+  // Crear el degradado
+  $gradient: linear-gradient(
+    0deg,
+    $overlay-color-alpha 0%,
+    $overlay-color-alpha 100%
+  );
+  // Retornar el stack de background CSS
+  @return var(--Color3-rollover, $gradient, $base-color);
+}

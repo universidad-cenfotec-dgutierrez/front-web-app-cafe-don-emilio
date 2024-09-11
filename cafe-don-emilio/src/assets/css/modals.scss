@@ -1,0 +1,20 @@
+/*
+*	ESTE ARCHIVO FUE CREADO PARA INCORPORAR ESTILOS PERSONALIZADOS 
+*	SE DEBEN INCORPORAR REGLAS DE ESTILO SOBRE CUADROS MODALES
+*/
+
+.base-modal{
+  width: 350px;
+
+  .mat-dialog-container{
+    border-radius: $box-border-radius;
+  }
+}
+
+.opac-modal{
+  @extend .base-modal;
+
+  .mat-dialog-container{
+    opacity: .8;
+  }
+}

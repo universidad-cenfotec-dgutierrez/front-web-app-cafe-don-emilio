@@ -1,0 +1,108 @@
+/*
+*	ESTE ARCHIVO FUE CREADO PARA INCORPORAR ESTILOS PERSONALIZADOS 
+*	SE DEBEN INCORPORAR REGLAS DE ESTILO BASICAS SOBRE COLORES DE TEXTO, BACKGROUND, ETC.
+*/
+
+// =============================
+// COLORES DE TEXTO
+// =============================
+.white{
+  color: $white;
+}
+.white-imp{
+  color: $white !important;
+}
+
+.black{
+  color: $black;
+}
+.black-imp{
+  color: $black !important;
+}
+
+.red{
+  color: $red;
+}
+.red-imp{
+  color: $red !important;
+}
+
+.green{
+  color: $green;
+}
+.green-imp{
+  color: $green !important;
+}
+
+.gris-texto{
+  color: $gris-texto;
+}
+.gris-texto-imp{
+  color: $gris-texto !important;
+}
+
+.gris-claro-fondo{
+  color: $gris-claro-fondo;
+}
+.gris-claro-fondo-imp{
+  color: $gris-claro-fondo !important;
+}
+
+.gris-strokes{
+  color: $gris-strokes;
+}
+.gris-strokes-imp{
+  color: $gris-strokes !important;
+}
+
+// =============================
+// BACKGROUNDS
+// =============================
+.bg-white{
+  background: $white;
+}
+.bg-white-imp{
+  background: $white !important;
+}
+
+.bg-black{
+  background: $black;
+}
+.bg-black-imp{
+  background: $black !important;
+}
+
+.bg-red{
+  background: $red;
+}
+.bg-red-imp{
+  background: $red !important;
+}
+
+.bg-green{
+  background: $green;
+}
+.bg-green-imp{
+  background: $green !important;
+}
+
+.bg-gris-texto{
+  background: $gris-texto;
+}
+.bg-gris-texto-imp{
+  background: $gris-texto !important;
+}
+
+.bg-gris-claro-fondo{
+  background: $gris-claro-fondo;
+}
+.bg-gris-claro-fondo-imp{
+  background: $gris-claro-fondo !important;
+}
+
+.bg-gris-strokes{
+  background: $gris-strokes;
+}
+.bg-gris-strokes-imp{
+  background: $gris-strokes !important;
+}

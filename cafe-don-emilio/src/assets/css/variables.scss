@@ -1,0 +1,33 @@
+/*
+*	ESTE ARCHIVO FUE CREADO PARA INCORPORAR ESTILOS PERSONALIZADOS 
+*	SE DEBEN INCORPORAR DEFINICIONES DE VARIABLES
+*/
+
+// Variables de colores
+$white: #FFFFFF;
+$black: #000000;
+$red: #FF0044;
+$green: #00BD13;
+$gris-texto: #415661;
+$gris-claro-fondo: #F9FBFA;
+$gris-strokes: #DEE4E5;
+$gris-strokes-2: #ADB2B3;
+
+// Radius
+$thin-border-radius: 4px;
+$base-border-radius: 8px;
+$box-border-radius: 16px;
+
+// Height
+$item-min-height: 48px;
+
+// Para medias querys
+$tablet-width: 550px;
+
+// Tamaños de bootstrap
+//xs < 576px, el resto son ≥
+$sm-width: 576px;
+$md-width: 768px;
+$lg-width: 992px;
+$xl-width: 1200px;
+$xxl-width: 1400px;
