@@ -3,7 +3,7 @@
 *	SE DEBEN INCORPORAR REGLAS DE ESTILO GENERALES DEL APP
 */
 
-html, body{
+html, body {
   font-size: 15px;
   line-height: 20px;
   color: $gris-texto;
@@ -13,7 +13,7 @@ html, body{
   border-radius: $box-border-radius;
   background: white;
   border: 1px solid $gris-strokes;
-  box-shadow: 0px 5px 10px rgba(89, 27, 27, 0.05);
+  box-shadow: 0 5px 10px rgba(89, 27, 27, 0.05);
 }
 
 .box-container{

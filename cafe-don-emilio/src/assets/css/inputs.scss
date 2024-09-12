@@ -6,37 +6,5 @@
 // ============================================
 // PARA INPUTS
 .input-base{
-
-  &.mat-form-field-should-float .mat-form-field-label, .mat-form-field-can-float .mat-input-server:focus + .mat-form-field-label-wrapper .mat-form-field-label{
-    transform: translateY(-1em) scale(0.75) perspective(100px) translateZ(0.001px) !important;
-  }
-  &.mat-focused .mat-form-field-label{
-    color: $gris-texto;
-  }
-  .mat-form-field-flex {
-    background: white;
-    border: 1px solid $gris-strokes;
-    border-radius: $base-border-radius;
-    color: $gris-texto;
-    padding: 0 0.5em;
-
-    .mat-form-field-infix{
-      min-height: $item-min-height;
-      border-top: 0.5em solid transparent;
-    }
-
-    .mat-form-field-prefix,
-    .mat-form-field-suffix{
-      margin-top: auto;
-      margin-bottom: auto;
-
-      .mat-icon{
-        font-size: 1.2em;
-      }
-    }
-  }
-
-  .mat-form-field-underline{
-    display: none;
-  }
+  //Estilos para un input base
 }

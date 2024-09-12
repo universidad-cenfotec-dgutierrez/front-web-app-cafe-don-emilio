@@ -18,3 +18,24 @@
   -webkit-line-clamp: $lines;
   -webkit-box-orient: vertical;
 }
+
+// Genera clases de colores
+@mixin color-class($name, $color) {
+  // Clases para color
+  .color-#{$name} {
+    color: $color;
+  }
+
+  .color-#{$name}-imp {
+    color: $color !important;
+  }
+
+  // Clases para background-color
+  .bg-color-#{$name} {
+    background-color: $color;
+  }
+
+  .bg-color-#{$name}-imp {
+    background-color: $color !important;
+  }
+}

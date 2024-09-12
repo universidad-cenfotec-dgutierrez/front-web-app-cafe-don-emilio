@@ -26,14 +26,13 @@
 html,
 body {
   font-family: "Roboto", sans-serif !important;
-  font-size: 14px; /* Porque es la medida que mas se usa entre los elementos del diseno */
+  font-size: 16px;
 }
 
 @media (min-width: $md-width) {
   html,
   body {
-    font-size: 16px;
-    //  Porque es la medida que mas se usa despues de la medida anterior entre los elementos del diseno
+    font-size: 20px;
     user-select: none;
   }
 }

@@ -3,36 +3,12 @@
 *	SE DEBEN INCORPORAR REGLAS DE ESTILO SOBRE LOS BOTONES
 */
 
-.btn-base{
-  position: relative;
-  border: 0;
-  border-radius: $base-border-radius !important;
-  text-align: center;
-  color: white;
-  margin: 0;
-  background: $black;
-  min-height: $item-min-height; // igual que el item-native
-  text-transform: none;
-  font-size: inherit;
-  box-shadow: none;
-
-  .btn-icon-left{
-    position: absolute;
-    left: 1em;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .btn-icon-right{
-    position: absolute;
-    right: 1em;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+.btn-base {
+  //Aqui van los estilos de un boton base
 }
 
 .btn-base.disabled, .btn-base:disabled, .btn-base.button-disabled{
-	border-radius: 8px;
+  border-radius: 8px;
   text-align: center;
   color: white;
   margin: 0;
