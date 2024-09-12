@@ -38,12 +38,18 @@ h2.subtitulo {
   margin-block-start: 0.83em;
 }
 
-.texto-peq {
+.texto-sm {
   font-size: 0.667rem; // 10px
   line-height: 1.333rem;
+}
+
+.texto-sm-1 {
+    font-size: 0.938rem; // 15px
+    line-height: 1.313rem; //21px
 }
 
 .texto-med {
   font-size: 1.067rem; // 16px
   line-height: 1.291rem;
 }
+

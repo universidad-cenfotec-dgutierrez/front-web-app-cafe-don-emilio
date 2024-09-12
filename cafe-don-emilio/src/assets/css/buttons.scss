@@ -5,32 +5,17 @@
 
 .btn-base {
   //Aqui van los estilos de un boton base
+  padding: 10px 20px;
 }
 
-.btn-base.disabled, .btn-base:disabled, .btn-base.button-disabled{
-  border-radius: 8px;
-  text-align: center;
-  color: white;
-  margin: 0;
-  background: $gris-strokes !important;
-
-  min-height: $item-min-height; // igual que el item-native
-  text-transform: none;
+.btn-sm {
+    padding: 5px 10px;
 }
 
-.btn-black{
-  @extend .btn-base;
-  background-color: $black !important;
+.btn-sm-1-imp {
+  padding: 10px 25px !important;
 }
-.btn-red{
-  @extend .btn-base;
-  background-color: $red !important;
-}
-.btn-gray{
-  @extend .btn-base;
-  background-color: $gris-texto !important;
-}
-.btn-green{
-  @extend .btn-base;
-  background-color: $green !important;
+
+.btn-md-imp {
+  padding: 10px 50px !important;
 }

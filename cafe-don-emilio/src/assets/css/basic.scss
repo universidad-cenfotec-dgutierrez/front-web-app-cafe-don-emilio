@@ -21,6 +21,11 @@
 }
 
 // BORDES
+
+.border-1px-primary-imp {
+  border: 1px solid $primary !important;
+}
+
 .border-1px-gray{
   border: 1px solid $gris-strokes;
 }

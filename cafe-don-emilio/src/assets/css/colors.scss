@@ -14,7 +14,7 @@
 // Llamada al mixin para generar las clases de color y background-color para todos los colores
 @include color-class('primary', $primary);
 @include color-class('secondary', $secondary);
-@include color-class('tertiary', $tertiary);
+@include color-class('tertiary', $info);
 @include color-class('medium', $medium);
 @include color-class('light', $light);
 

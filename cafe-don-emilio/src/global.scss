@@ -2,8 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 
+
 /* Importacion del scss de bootstrap */
-@import "bootstrap/dist/css/bootstrap.css";
+
 
 //Se importan los estilos de la libreria swiper
 @import "swiper/scss";
@@ -22,6 +23,7 @@
 @import "assets/css/general";
 @import "assets/css/animations";
 
+@import "bootstrap/scss/bootstrap";
 
 html,
 body {
@@ -32,7 +34,7 @@ body {
 @media (min-width: $md-width) {
   html,
   body {
-    font-size: 20px;
+    font-size: 16px;
     user-select: none;
   }
 }

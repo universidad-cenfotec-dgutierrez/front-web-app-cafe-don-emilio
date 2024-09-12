@@ -30,6 +30,14 @@
     color: $color !important;
   }
 
+  .color-on-#{$name} {
+    color: $color;
+  }
+
+  .color-on-#{$name}-imp {
+    color: $color !important;
+  }
+
   // Clases para background-color
   .bg-color-#{$name} {
     background-color: $color;
