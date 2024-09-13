@@ -21,6 +21,28 @@ $on-light: #000;
 $gris-strokes: #E0E0E0;
 $gris-strokes-2: #E0E0E0;
 
+:root {
+  --primary: #20483F;
+  --on-primary: #000;
+  --primary-rgba-50: rgba($primary, 0.5); // Color con 50% de transparencia
+
+
+  --secondary: #A03243;
+  --on-secondary: #fff;
+
+  --info: #EBE1D8;
+  --on-info: #000;
+
+  --medium: #F8F6F3;
+  --on-medium: #000;
+
+  --light: #fff;
+  --on-light: #000;
+
+  --gris-strokes: #E0E0E0;
+  --gris-strokes-2: #E0E0E0;
+}
+
 
 // Radius
 $thin-border-radius: 4px;

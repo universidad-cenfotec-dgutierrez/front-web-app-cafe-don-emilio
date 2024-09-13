@@ -12,15 +12,15 @@ interface  ICarouselProps {
  * @param listSrcImages list of images to show in the carousel
  * @author dgutierrez
  */
-export const CarouselComponent = ({listSrcImages} :ICarouselProps ) => {
+export const CarouselComponent = ( { listSrcImages } :ICarouselProps ) => {
     return (
         <>
-            <div id="carouselExample" className="carousel slide">
+            <div id="carouselExample" className="carousel slide position-relative">
                 <div className="carousel-inner">
                     {
                         listSrcImages.map((imageSrc, index) => (
                         <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={index} >
-                            <img src={imageSrc} className="d-block w-100" alt="..."/>
+                            <img src={imageSrc} className="d-block w-100 object-fit-cover h-dvh-100" alt="..."/>
                         </div>
                     ))}
                 </div>

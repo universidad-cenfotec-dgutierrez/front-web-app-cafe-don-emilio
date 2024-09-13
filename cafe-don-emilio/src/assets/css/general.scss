@@ -8,3 +8,17 @@
         color: $on-primary !important;
     }
 }
+
+.navbar-brand {
+    &__logo {
+        width: 176px;
+    }
+
+    @media (min-width: 360px){
+        &__logo {
+            //Ahora toma el tamano por defecto
+            width: auto;
+        }
+    }
+}
+

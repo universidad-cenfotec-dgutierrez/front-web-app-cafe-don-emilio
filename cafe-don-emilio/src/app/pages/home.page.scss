@@ -1,0 +1,43 @@
+// Import de variables
+@import "../../assets/css/variables";
+
+// Bloque principal para el logo del contenedor
+.logo-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-color: rgba($primary, 0.9); // Color primario con transparencia
+
+  &__carousel {
+    width: 140px; // Estilo base
+
+    // Media queries anidadas para distintos tamaños
+    @media (min-width: 576px) {
+      width: 350px;
+    }
+
+    @media (min-width: 768px) {
+      width: 450px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 650px;
+    }
+  }
+}
+
+// Bloque para el badge
+.badge {
+  position: absolute;
+  top: 82px; // Espaciado en la parte superior
+  right: 10px; // Espaciado en la parte derecha
+  z-index: 2;
+  width: 150px; // Tamaño base del badge
+
+  &__img {
+    width: 100%;
+    height: auto; // Imagen siempre proporcional
+  }
+}

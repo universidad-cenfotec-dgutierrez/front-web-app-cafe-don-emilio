@@ -1,15 +1,18 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCartShopping} from "@fortawesome/free-solid-svg-icons";
 
-
+/**
+ * Component for the header of the application
+ * @author dgutierrez
+ */
 export const HeaderComponent = () => {
     return (
         <>
-            <header className="position-sticky">
-                <nav className="navbar navbar-expand-lg bg-medium px-4">
+            <header className="fixed-top">
+                <nav className="navbar navbar-expand-xl bg-color-medium px-4">
                     <div className="container-fluid">
                         <a className="navbar-brand" href="#">
-                            <img src="/logo.svg" alt="Logo de la empresa cafe don emilio"/>
+                            <img className="navbar-brand__logo" src="/logo.svg" alt="Logo de la empresa cafe don emilio"/>
                         </a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -19,13 +22,13 @@ export const HeaderComponent = () => {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <a className="nav-link texto-sm-1 active" aria-current="page" href="#">Nuestra historia</a>
+                                    <a className="nav-link texto-sm-1 fw-normal active" aria-current="page" href="#">Nuestra historia</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link texto-sm-1" href="#">Preguntas frecuentes</a>
+                                    <a className="nav-link texto-sm-1 fw-normal" href="#">Preguntas frecuentes</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link texto-sm-1" href="#">Tienda de café</a>
+                                    <a className="nav-link texto-sm-1 fw-normal" href="#">Tienda de café</a>
                                 </li>
                             </ul>
                             <div>
