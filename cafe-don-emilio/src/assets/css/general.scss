@@ -14,10 +14,16 @@
         width: 176px;
     }
 
+
+
     @media (min-width: 360px){
         &__logo {
             //Ahora toma el tamano por defecto
             width: auto;
+        }
+
+        &__logo__large {
+            width: 250px;
         }
     }
 }
