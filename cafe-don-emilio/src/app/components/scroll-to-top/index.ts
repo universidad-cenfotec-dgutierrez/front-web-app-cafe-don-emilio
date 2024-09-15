@@ -1,1 +1,1 @@
-export * from "./scroll-to-top.component.ts";
+export * from "./scroll-to.top.ts";

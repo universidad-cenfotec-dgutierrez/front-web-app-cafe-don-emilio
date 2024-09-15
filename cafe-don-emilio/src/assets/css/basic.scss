@@ -13,6 +13,16 @@
   padding-top: 12rem !important;
 }
 
+.w-min-content {
+  width: min-content;
+}
+
+.dimension-80px {
+  width: 80px;
+  height: 80px;
+}
+
+
 // ANCHOS
 @media (min-width: $lg-width){
   .w-lg-50{

@@ -1,8 +1,16 @@
-import {BaseCardComponent, CarouselComponent, HeaderComponent} from "../components";
+import {
+    BaseCardComponent,
+    CarouselComponent,
+    HeaderComponent,
+    InfoCardDetailedComponent,
+    LineComponent,
+    TestimonyCardComponent
+} from "../components";
 
 import './home.page.scss';
 
 import {Swiper, SwiperSlide} from "swiper/react";
+import {faClock, faStopwatch, faUtensils, faWallet} from "@fortawesome/free-solid-svg-icons";
 
 /**
  * Page for the home page
@@ -58,6 +66,67 @@ export const HomePage = () => {
         },
     };
 
+    const listInfo = [
+        {
+        iconSrc: faClock,
+        isIconSrcFontAwesome: true,
+        title: "Duración del tour",
+        listInfo: ["4-5 horas aproximadamente"],
+        },
+        {
+            iconSrc: faStopwatch,
+            isIconSrcFontAwesome: true,
+            title: "Horario",
+            listInfo: ["Lun a Vie: 7:00 a.m. – 5:00 p.m.", "Sáb: 8:00 a.m. – 5:00 p.m.", "Dom: 9:00 a.m. – 5:00 p.m."],
+            showDetailInfoInOrderList: false
+        },
+        {
+            iconSrc: faWallet,
+            isIconSrcFontAwesome: true,
+            title: "Precios",
+            listInfo: ["Precio por persona: $40.", "Niños y jóvenes: $30.", "Menores de 10 años: Gratis."],
+            showDetailInfoInOrderList: true
+        },
+        {
+            iconSrc: faUtensils,
+            isIconSrcFontAwesome: true,
+            title: "Servicios adicionales",
+            listInfo: ["Almuerzo", "Caminata a la cascada", "Venta de souvenirs"],
+            showDetailInfoInOrderList: true
+        }
+    ];
+
+    const testimonies = [
+        {
+        autor:"Alejandro Powell",
+        date: "9/10/2021",
+        text:"“Deiner, Emilio y el resto de su familia nos han hecho sentir como en casa mientras aprendamos todo" +
+            " sobre el maravilloso café que cultivan y preparan. Es un tour muy ameno e interesante que sin duda" +
+            " recomendaría.”"
+        },
+        {
+            autor:"Marc Francis",
+            date: "28/6/2022",
+            text:"“No es un tour de café, es toda una experiencia! Desde tu llegada hasta tu salida, Deiner" +
+                " te hace sentir como parte de la familia, cuenta como nunca otro toda la historia del café y" +
+                " la aventura de su familia en este negocio. Recuerdos inolvidables! Es el verdadero Costa Rica 🙂”"
+        },
+        {
+            autor:"Stephanie Padilla",
+            date: "4/3/2021",
+            text:"“Feliz de haber llegado a este lugar tan maravilloso... Recomiendo esta experiencia un 100%." +
+                " Me sentí como en familia y aprendí muchas cosas interesantes que no imaginaba sobre el" +
+                " proceso del café... Definitivamente me encanto... 😍”"
+        },
+        {
+            autor:"Alejandro Powell",
+            date: "9/10/2021",
+            text:"“Deiner, Emilio y el resto de su familia nos han hecho sentir como en casa mientras aprendamos todo" +
+                " sobre el maravilloso café que cultivan y preparan. Es un tour muy ameno e interesante que sin duda" +
+                " recomendaría.”"
+        }
+    ];
+
     return (
         <>
             <HeaderComponent/>
@@ -99,7 +168,74 @@ export const HomePage = () => {
                     }
                 </Swiper>
 
+                <div className="text-center">
+                    <button className="btn btn-secondary rounded-5 btn-md-imp">Nuestra historia</button>
+                </div>
             </section>
+
+            <section className="bg-color-medium">
+                <div className="container">
+                    <div className="text-center py-5">
+                        <LineComponent/>
+                        <h2>Descripción del tour de café</h2>
+                    </div>
+
+                    <div className="row">
+                        {
+                            listInfo.map(({
+                                              showDetailInfoInOrderList,
+                                              listInfo,
+                                              iconSrc,
+                                              isIconSrcFontAwesome,
+                                              title
+                                          }, index) => (
+                                <div key={index} className="col-6 col-md-3">
+                                    <InfoCardDetailedComponent
+                                        iconSrc={iconSrc}
+                                        isIconSrcFontAwesome={isIconSrcFontAwesome}
+                                        title={title}
+                                        listInfo={listInfo}
+                                        showDetailInfoInOrderList={showDetailInfoInOrderList}
+                                    />
+                                </div>
+                            ))
+                        }
+                    </div>
+
+                    <div className="text-center py-5">
+                        <button className="btn btn-secondary rounded-5 btn-md-imp">Reserve su visita</button>
+                    </div>
+                </div>
+            </section>
+
+            <section className="my-5">
+                <div className="container">
+                    <div className="text-center py-5">
+                    <LineComponent/>
+                        <h2>Testimonios</h2>
+                    </div>
+
+                    <Swiper breakpoints={breakPointsSwiper}>
+                        {
+                            testimonies.map(({autor, date, text}, index) => (
+                                <SwiperSlide key={index}>
+                                    <TestimonyCardComponent
+                                        autor={autor}
+                                        date={date}
+                                        text={text}
+                                    />
+                                </SwiperSlide>
+                            ))
+                        }
+                    </Swiper>
+                    <div className="text-center my-5">
+                        <button className="btn btn-secondary rounded-5 btn-md-imp">Escribe un comentario</button>
+                    </div>
+                </div>
+            </section>
+
+            
+
         </>
     );
 };
