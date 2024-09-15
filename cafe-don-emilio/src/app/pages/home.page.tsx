@@ -1,6 +1,6 @@
 import {
     BaseCardComponent,
-    CarouselComponent, EmbedMap, FooterComponent,
+    CarouselComponent, EmbedMapComponent, FooterComponent,
     HeaderComponent,
     InfoCardDetailedComponent,
     LineComponent,
@@ -259,7 +259,7 @@ export const HomePage = () => {
                            </div>
                        </div>
                        <div className="col-12 col-md-8">
-                           <EmbedMap width="100%"/>
+                           <EmbedMapComponent width="100%"/>
                        </div>
                    </div>
 
