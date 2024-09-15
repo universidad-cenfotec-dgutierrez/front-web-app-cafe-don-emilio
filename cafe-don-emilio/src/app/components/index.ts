@@ -7,3 +7,4 @@ export * from "./line";
 export * from "./footer";
 export * from "./stars";
 export * from "./testimonial-card";
+export * from "./embed-map";
