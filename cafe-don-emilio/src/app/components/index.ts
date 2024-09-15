@@ -9,4 +9,4 @@ export * from "./stars";
 export * from "./testimonial-card";
 export * from "./embed-map";
 export * from "./icons";
-
+export * from "./our-location";

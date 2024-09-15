@@ -36,7 +36,7 @@ export const TestimonyCardComponent = (
                 <StarsComponent/>
             </div>
             <div className="card__body">
-                <p className="fw-normal texto-med">
+                <p className="fw-normal texto-med text-start">
                     {text}
                 </p>
             </div>

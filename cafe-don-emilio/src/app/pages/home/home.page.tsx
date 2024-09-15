@@ -1,11 +1,13 @@
 import {
     BaseCardComponent,
-    CarouselComponent, EmbedMapComponent, FooterComponent,
+    CarouselComponent,
+    FooterComponent,
     HeaderComponent,
     InfoCardDetailedComponent,
     LineComponent,
+    OurLocationComponent,
     TestimonyCardComponent
-} from "../components";
+} from "../../components";
 
 import './home.page.scss';
 
@@ -148,7 +150,7 @@ export const HomePage = () => {
 
             <section className="container my-5">
                 <div className="my-5">
-                    <h1 className="text-center color-primary titulo-1 fw-normal">Descubre nuestro tour de café</h1>
+                    <h1 className="text-center color-primary titulo-1 fw-medium">Descubre nuestro tour de café</h1>
                     <div className="text-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="46" height="14" viewBox="0 0 46 14" fill="none">
                             <path
@@ -177,7 +179,7 @@ export const HomePage = () => {
                 <div className="container">
                     <div className="text-center py-5">
                         <LineComponent/>
-                        <h2>Descripción del tour de café</h2>
+                        <h2 className="titulo-1 fw-medium">Descripción del tour de café</h2>
                     </div>
 
                     <div className="row">
@@ -212,7 +214,7 @@ export const HomePage = () => {
                 <div className="container">
                     <div className="text-center py-5">
                     <LineComponent/>
-                        <h2>Testimonios</h2>
+                        <h2 className="titulo-1 fw-medium">Testimonios</h2>
                     </div>
 
                     <Swiper breakpoints={breakPointsSwiper}>
@@ -235,35 +237,7 @@ export const HomePage = () => {
             </section>
 
             <section className="my-5">
-                <div className="container">
-                    <div className="text-center py-5">
-                        <LineComponent/>
-                        <h2>Nuestra ubicación</h2>
-                    </div>
-
-                   <div className="row">
-                       <div className="col-12 col-md-4">
-                           <div>
-                               <h6 className="titulo-4 fw-bold">Ubicación</h6>
-                               <p>Comunidad de San Luis Bocana Pérez Zeledón, Costa Rica</p>
-                           </div>
-
-                           <div>
-                               <h6 className="titulo-4 fw-bold">Contacto</h6>
-                               <p>Teléfono: 8646 2463</p>
-                               <p>cafedonemiliocr@email.com</p>
-                           </div>
-
-                           <div className="my-5">
-                               <button className="btn btn-secondary rounded-5 btn-md-imp">Reserve su visita</button>
-                           </div>
-                       </div>
-                       <div className="col-12 col-md-8">
-                           <EmbedMapComponent width="100%"/>
-                       </div>
-                   </div>
-
-                </div>
+                <OurLocationComponent/>
             </section>
             <FooterComponent/>
         </>

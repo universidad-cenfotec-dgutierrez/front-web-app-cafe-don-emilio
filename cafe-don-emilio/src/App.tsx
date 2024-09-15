@@ -4,7 +4,7 @@ import { ScrollToTop } from "./app/components";
 
 import { PagesUrlsEnum } from "./app/common/enums";
 
-import { HomePage } from "./app/pages";
+import {HomePage, OurHistoryPage} from "./app/pages";
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path={PagesUrlsEnum.HOME} element={<HomePage />} />
+        <Route path={PagesUrlsEnum.OUR_HISTORY} element={<OurHistoryPage />} />
       </Routes>
     </BrowserRouter>
   );
