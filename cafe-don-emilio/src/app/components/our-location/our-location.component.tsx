@@ -14,7 +14,7 @@ export const OurLocationComponent = () => {
             </div>
 
             <div className="row">
-                <div className="col-12 col-md-4">
+                <div className="col-12 col-lg-4">
                     <div>
                         <h6 className="titulo-4 fw-bold">Ubicación</h6>
                         <p>Comunidad de San Luis Bocana Pérez Zeledón, Costa Rica</p>
@@ -30,7 +30,7 @@ export const OurLocationComponent = () => {
                         <button className="btn btn-secondary rounded-5 btn-md-imp">Reserve su visita</button>
                     </div>
                 </div>
-                <div className="col-12 col-md-8">
+                <div className="col-12 col-lg-8">
                     <EmbedMapComponent width="100%"/>
                 </div>
             </div>
