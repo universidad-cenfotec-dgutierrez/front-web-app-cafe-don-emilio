@@ -1,5 +1,5 @@
-import {LineComponent} from "../line";
 import {EmbedMapComponent} from "../embed-map";
+import {TitleSeccionComponent} from "../title-seccion";
 
 /**
  * OurLocationComponent component for showing the location of the company
@@ -9,8 +9,7 @@ export const OurLocationComponent = () => {
     return (
         <div className="container">
             <div className="text-center py-5">
-                <LineComponent/>
-                <h2 className="titulo-1 fw-bold">Nuestra ubicación</h2>
+                <TitleSeccionComponent nameOfSection={ "Nuestra ubicación" }/>
             </div>
 
             <div className="row">

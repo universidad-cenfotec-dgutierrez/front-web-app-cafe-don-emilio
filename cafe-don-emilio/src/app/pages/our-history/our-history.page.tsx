@@ -1,4 +1,9 @@
-import {FooterComponent, HeaderComponent, LineComponent, OurLocationComponent} from "../../components";
+import {
+    FooterComponent,
+    HeaderComponent,
+    OurLocationComponent,
+    TitleSeccionComponent
+} from "../../components";
 
 /**
  * Page Component for show the history of the company
@@ -19,8 +24,7 @@ export const OurHistoryPage = () =>{
             <HeaderComponent/>
             <div className="container pt-3">
                 <div className="text-center py-5 my-5">
-                    <LineComponent/>
-                    <h1 className="fw-bold titulo-1">Nuestra historia</h1>
+                    <TitleSeccionComponent nameOfSection={ "Nuestra historia" }/>
                 </div>
 
                 <div className="row">
