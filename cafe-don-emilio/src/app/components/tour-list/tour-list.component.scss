@@ -1,0 +1,43 @@
+.list-group-item {
+    background-color: var(--bs-list-group-bg)!important;
+    border-top: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color)!important;
+    border-bottom: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color)!important;
+    border-left: none!important;
+    border-right: none !important;
+}
+
+.reserve-now-btn {
+    --bs-btn-color: black !important;
+    --bs-btn-bg: white !important;
+    border-color: #A03243 !important;
+  }
+
+  .btn-md-imp.tour-list-btn, .btn-md-imp.reserve-now-btn {
+    font-size: small !important;
+    font-weight: 400!important;
+    width: 15%!important;
+    padding: 10px 10px !important;
+    font-weight: 500!important;
+  }
+
+  .tour-info{
+    width: 78%!important;
+  }
+
+  .info-column{
+    flex-direction: column!important;
+  }
+  
+
+  .flex-column-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-item {
+    width: 33% !important;
+}
+
+.small-item {
+    width: 33% !important; 
+}

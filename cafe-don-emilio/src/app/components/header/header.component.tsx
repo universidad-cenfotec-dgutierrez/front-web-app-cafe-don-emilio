@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { PagesUrlsEnum } from "../../common/enums";
+import { Link } from 'react-router-dom';
 
 /**
  * Component for the header of the application
@@ -56,10 +57,11 @@ export const HeaderComponent = () => {
                             <div>
                                 <button className="btn btn-outline-primary me-3">ES</button>
 
-                                <button className="btn btn-md-imp btn-secondary color-light me-3 rounded-5">
-                                    Reservar
+                                <Link to={PagesUrlsEnum.RESERVATION}>
+                                 <button className="btn btn-md-imp btn-secondary color-light me-3 rounded-5">
+                                  Reservar
                                 </button>
-
+                                </Link>
                                 <button className="btn btn-primary btn-sm-1-imp rounded-5">
                                     <FontAwesomeIcon size={"xl"} icon={faCartShopping} />
                                 </button>
@@ -108,6 +110,7 @@ export const HeaderComponent = () => {
                         </div>
                         <div className="text-center">
                             <button className="btn btn-md-imp btn-secondary color-light me-3 rounded-5">Reservar
+                            <a className="nav-link texto-sm-1 fw-normal active" aria-current="page" href={PagesUrlsEnum.OUR_HISTORY}></a>
                             </button>
                         </div>
                     </div>

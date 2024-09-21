@@ -51,3 +51,29 @@ h2.subtitulo {
   font-size: 1rem; // 16px
   line-height: 1.45rem;
 }
+
+//Dotted line o punteado entre ambos span
+.dotted-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dotted-line::before {
+  content: "";
+  flex-grow: 1;
+  border-bottom: 1px dotted grey;
+  margin: 0 10px; 
+}
+
+.product-span:first-child {
+  margin-right: 10px;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.product-span:last-child {
+  margin-left: 10px; 
+}
+

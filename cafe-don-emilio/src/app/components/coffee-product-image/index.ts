@@ -1,0 +1,1 @@
+export * from "./coffee-product-image.component.tsx";

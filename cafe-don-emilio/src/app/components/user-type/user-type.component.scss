@@ -1,0 +1,35 @@
+
+
+.fixed-width {
+    width: 150px; 
+    text-align: left; 
+  }
+  
+
+  .custom-border {
+    border: 1.5px solid #ccc; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 15px; 
+  }
+  
+.details-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 30%;
+}
+
+.user-icon-container {
+    flex: 1 0 20%;
+}
+
+.type-container {
+    flex: 1 0 33%;
+    text-align: left; 
+}
+
+.description-container {
+    flex: 1 0 100%;
+    text-align: center; 
+}

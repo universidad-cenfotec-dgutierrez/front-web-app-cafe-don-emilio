@@ -1,0 +1,16 @@
+.food-cart{
+    justify-items: center;
+    justify-content: center;
+    gap: 2%;
+    width: 35%;
+}
+
+.card-title.text-start {
+    text-align: start !important;
+}
+
+
+.d-flex.justify-content-between.food-cart-component .main-price-container {
+    width: 100%;
+    justify-content: space-between !important;
+}
