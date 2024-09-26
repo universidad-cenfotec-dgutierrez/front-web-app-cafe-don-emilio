@@ -35,7 +35,7 @@ export const MinusPlusButtons: React.FC<MinusPlusButtonsProps> = ({
   };
 
   return (
-    <div className="d-flex align-items-center">
+    <div className="d-flex align-items-center justify-content-center">
       <button className="btn btn-outline-secondary minus-plus-btn" onClick={handleDecrement}>
         <img src="/minus-btn.png" alt="minus" />
       </button>

@@ -49,7 +49,7 @@ export const HeaderComponent = () => {
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link texto-sm-1 fw-normal" href="#">
+                                    <a className="nav-link texto-sm-1 fw-normal" href={PagesUrlsEnum.SHOP}>
                                         Tienda de café
                                     </a>
                                 </li>

@@ -45,7 +45,7 @@ export const Popup: React.FC<PopupProps> = ({ reservation, onClose, show }) => {
           <hr />
             <div className='d-flex flex-column align-items-center text-center width-100 base-padding'>
             <h2>¿Te gustaría comprar café?</h2>
-            <div className="coffee-products d-flex base-padding">
+            <div className="coffee-products d-flex base-padding justify-space-evenly">
               <CoffeeProduct
                 title="Café molido"
                 description="Tueste medio"

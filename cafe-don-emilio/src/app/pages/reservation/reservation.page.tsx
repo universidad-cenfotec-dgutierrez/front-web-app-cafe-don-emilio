@@ -11,6 +11,8 @@ import {
     ConfirmationCard 
 } from "../../components";
 
+import "./reservation.scss";
+
 
 /**
  * BookingPage by

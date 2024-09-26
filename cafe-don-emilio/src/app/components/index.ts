@@ -21,3 +21,5 @@ export * from "./coffee-product-props";
 export * from "./booking-popup";
 export * from "./price-quantity";
 export * from "./coffee-product-image";
+export * from "./product-card";
+export * from "./text-image";
