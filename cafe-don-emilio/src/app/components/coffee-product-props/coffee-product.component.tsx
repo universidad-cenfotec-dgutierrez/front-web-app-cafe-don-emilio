@@ -16,7 +16,7 @@ export const CoffeeProduct: React.FC<CoffeeProductProps> = ({ title, description
         <div className="coffee-product d-flex grey-border ">
             <CoffeeCard image={(imgSrc)}></CoffeeCard>
             <div className="coffee-details d-flex flex-column justify-content-center">
-                <div className='d-flex justify-content-between'>
+                <div className='d-flex justify-content-evenly'>
                 <div>
                 <h5>{title}</h5>
                 <p>{description}</p>

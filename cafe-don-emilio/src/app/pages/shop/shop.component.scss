@@ -15,9 +15,9 @@
     margin: 5%;
 }
 
-.coffee-container {
+/*.coffee-container {
     margin: 3% 0;
-}
+}  padding */ 
 
 .bg-color {
     background-color: #f8f6f3;
@@ -36,6 +36,10 @@
     margin-top: 5%!important;
 }
 
-.info-container {
+.container.coffee-container.d-flex.justify-content-center.align-items-center.p-3.w-80 {
+ height: fit-content;   
+}
 
+.btn.btn-md-imp.btn-secondary.reserve-now-btn.color-light.me-3.rounded-5.tour-list-btn.tour-list-btn-popup.add-btn.d-flex.justify-content-evenly {
+    margin: 0;
 }
