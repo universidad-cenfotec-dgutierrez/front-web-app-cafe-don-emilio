@@ -9,6 +9,62 @@
     }
 }
 
+.btn.add-btn {
+    width: 75% !important;
+    height: 2rem!important;
+    align-content: center;
+    align-items: center;
+}
+
+
+.border-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    transition: transform 0.2s ease-in-out;  //Animacion
+    width: 20%!important;
+  }
+
+  .border-shadow:hover {
+    transform: translateY(-5px);
+  }
+
+.gap-50 {
+    gap: 50px;
+}
+  
+
+.food-cart-container {
+    gap: 3%;
+}
+
+.no-border {
+    border: none!important;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.left-border-custom {
+    position: relative; 
+
+  }
+  
+  .left-border-custom::before {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    top: 10%; 
+    height: 80%; 
+    width: 1px; 
+    background-color: #D9D9D9; 
+  }
+  
+
+.title-distance {
+    height: 8rem!important;
+}
+
 .navbar-brand {
     &__logo {
         width: 176px;

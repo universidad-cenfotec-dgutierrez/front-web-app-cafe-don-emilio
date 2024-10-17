@@ -4,8 +4,9 @@ import {
     FooterComponent,
     HeaderComponent,
     InfoCardDetailedComponent,
+    LineComponent,
     OurLocationComponent,
-    TestimonyCardComponent, TitleSeccionComponent
+    TestimonyCardComponent
 } from "../../components";
 
 import './home.page.scss';
@@ -69,10 +70,10 @@ export const HomePage = () => {
 
     const listInfo = [
         {
-            iconSrc: faClock,
-            isIconSrcFontAwesome: true,
-            title: "Duración del tour",
-            listInfo: ["4-5 horas aproximadamente"],
+        iconSrc: faClock,
+        isIconSrcFontAwesome: true,
+        title: "Duración del tour",
+        listInfo: ["4-5 horas aproximadamente"],
         },
         {
             iconSrc: faStopwatch,
@@ -99,30 +100,30 @@ export const HomePage = () => {
 
     const testimonies = [
         {
-            autor: "Alejandro Powell",
-            date: "9/10/2021",
-            text: "“Deiner, Emilio y el resto de su familia nos han hecho sentir como en casa mientras aprendamos todo" +
-                " sobre el maravilloso café que cultivan y preparan. Es un tour muy ameno e interesante que sin duda" +
-                " recomendaría.”"
+        autor:"Alejandro Powell",
+        date: "9/10/2021",
+        text:"“Deiner, Emilio y el resto de su familia nos han hecho sentir como en casa mientras aprendamos todo" +
+            " sobre el maravilloso café que cultivan y preparan. Es un tour muy ameno e interesante que sin duda" +
+            " recomendaría.”"
         },
         {
-            autor: "Marc Francis",
+            autor:"Marc Francis",
             date: "28/6/2022",
-            text: "“No es un tour de café, es toda una experiencia! Desde tu llegada hasta tu salida, Deiner" +
+            text:"“No es un tour de café, es toda una experiencia! Desde tu llegada hasta tu salida, Deiner" +
                 " te hace sentir como parte de la familia, cuenta como nunca otro toda la historia del café y" +
                 " la aventura de su familia en este negocio. Recuerdos inolvidables! Es el verdadero Costa Rica 🙂”"
         },
         {
-            autor: "Stephanie Padilla",
+            autor:"Stephanie Padilla",
             date: "4/3/2021",
-            text: "“Feliz de haber llegado a este lugar tan maravilloso... Recomiendo esta experiencia un 100%." +
+            text:"“Feliz de haber llegado a este lugar tan maravilloso... Recomiendo esta experiencia un 100%." +
                 " Me sentí como en familia y aprendí muchas cosas interesantes que no imaginaba sobre el" +
                 " proceso del café... Definitivamente me encanto... 😍”"
         },
         {
-            autor: "Alejandro Powell",
+            autor:"Alejandro Powell",
             date: "9/10/2021",
-            text: "“Deiner, Emilio y el resto de su familia nos han hecho sentir como en casa mientras aprendamos todo" +
+            text:"“Deiner, Emilio y el resto de su familia nos han hecho sentir como en casa mientras aprendamos todo" +
                 " sobre el maravilloso café que cultivan y preparan. Es un tour muy ameno e interesante que sin duda" +
                 " recomendaría.”"
         }
@@ -177,8 +178,8 @@ export const HomePage = () => {
             <section className="bg-color-medium">
                 <div className="container">
                     <div className="text-center py-5">
-                        <TitleSeccionComponent classNameTitle={"titulo-1 fw-medium"}
-                                               nameOfSection={"Descripción del tour de café"}/>
+                        <LineComponent/>
+                        <h2 className="titulo-1 fw-medium">Descripción del tour de café</h2>
                     </div>
 
                     <div className="row">
@@ -212,7 +213,8 @@ export const HomePage = () => {
             <section className="my-5">
                 <div className="container">
                     <div className="text-center py-5">
-                        <TitleSeccionComponent classNameTitle={"titulo-1 fw-medium"} nameOfSection={"Testimonios"}/>
+                    <LineComponent/>
+                        <h2 className="titulo-1 fw-medium">Testimonios</h2>
                     </div>
 
                     <Swiper breakpoints={breakPointsSwiper}>

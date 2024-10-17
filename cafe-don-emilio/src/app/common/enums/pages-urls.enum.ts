@@ -5,4 +5,6 @@
 export enum PagesUrlsEnum {
   HOME = "/",
   OUR_HISTORY = "/our-history",
+  RESERVATION = "/reservation",
+  SHOP = "/shop"
 }

@@ -1,0 +1,39 @@
+.primary-coffee {
+    background-color: #e8eaed; 
+  }
+  
+  .secondary-coffee {
+    background-color: #e9edec; 
+  }
+  
+.primary-coffee img , .secondary-coffee img {
+  width: auto ;
+}
+
+.image-container img {
+    width: 40%!important;
+    height: auto!important;
+}
+
+.coffee-container{
+  padding: 5%;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  margin: auto;
+  width: 80%;
+}
+
+.coffee-product {
+  width: 40%;
+  height: 50%;
+  align-content: space-between;
+}
+
+.coffee-products {
+  justify-content: space-between;
+}
+
+.tour-list-btn-popup {
+  width: 100%!important;
+}

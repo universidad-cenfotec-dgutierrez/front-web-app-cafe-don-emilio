@@ -1,0 +1,89 @@
+.custom-btn {
+    --bs-btn-border-color: transparent; 
+
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.dropdown-toggle {
+    background-image: url(./dropdown-arrow.png);
+    background-repeat: no-repeat;
+    background-position: calc(92% + 14px) center;
+    background-size: 1em; 
+    padding-right: 25px!important;
+    overflow: visible;
+}
+
+.first-div.d-flex.justify-content-center.align-items-center {
+    margin-bottom: 3%!important;
+}
+
+
+.btn.btn-outline-secondary.custom-btn.d-flex.flex-column.align-items-center {
+    border-color: transparent;
+    color: black;
+}
+
+.btn.btn-outline-secondary.me-2.arrow-btn.custom-btn {
+    border-color:  #dfdfdf; 
+    opacity: 0.5;
+    margin-top: 2.8rem !important;
+}
+
+.arrow-btn.custom-btn {
+    margin-top: 2.8rem!important;
+}
+
+
+.btn-check:checked + .btn, 
+:not(.btn-check) + .btn:active, 
+.btn:first-child:active, 
+.btn.active, 
+.btn.show {
+    color: inherit !important; 
+    background-color: transparent !important; 
+    border-color: transparent !important; 
+}
+
+
+.btn:hover .first-div,
+.btn:hover .second-div {
+    border-color: #A03243 !important; 
+    font-weight: 500!important;
+}
+
+
+.btn.active .first-div,
+.btn.active .second-div {
+    border-color: #A03243 !important; 
+    font-weight: 500!important;
+}
+
+
+.first-div,
+.second-div {
+    width: 100px;
+    height: 40px;
+    border: 2px solid #dfdfdf;
+    border-radius: 4px;
+}
+
+
+.btn-outline-secondary:hover {
+    --bs-btn-hover-bg: transparent !important; 
+}
+
+
+.font-weight {
+    --bs-btn-font-weight: 500!important;
+}
+
+span {
+    font-weight: 500!important;
+}
+
+
+
+

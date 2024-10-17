@@ -1,9 +1,4 @@
-import {
-    FooterComponent,
-    HeaderComponent,
-    OurLocationComponent,
-    TitleSeccionComponent
-} from "../../components";
+import {FooterComponent, HeaderComponent, LineComponent, OurLocationComponent, TextImage} from "../../components";
 
 /**
  * Page Component for show the history of the company
@@ -24,20 +19,11 @@ export const OurHistoryPage = () =>{
             <HeaderComponent/>
             <div className="container pt-3">
                 <div className="text-center py-5 my-5">
-                    <TitleSeccionComponent nameOfSection={ "Nuestra historia" }/>
+                    <LineComponent/>
+                    <h1 className="fw-bold titulo-1">Nuestra historia</h1>
                 </div>
 
-                <div className="row">
-                    <div className="col-12 col-md-6">
-                        <h2 className="titulo-3 fw-bold">Una familia auténtica campesina</h2>
-                        {
-                            listParagraph.map(text=> <p>{text}</p>)
-                        }
-                    </div>
-                    <div className="col-12 col-md-6">
-                        <img src="/people-smiling.webp" className="img-fluid" alt="Una familia sonriendo" />
-                    </div>
-                </div>
+             <TextImage title={"Una familia auténtica campesina"} listParagraph={listParagraph} imageSrc={"/people-smiling.webp"} imageAlt={"Una familia sonriendo"}></TextImage>
 
             </div>
            <div className="my-5">
