@@ -4,6 +4,5 @@ export class UnmutableConstants {
   static readonly language = "language";
 
   private static readonly products = "/products";
-  static readonly getAllProducts =
-    UnmutableConstants.products + "/getAllProducts";
+  static readonly getAllProducts = UnmutableConstants.products + "/all";
 }

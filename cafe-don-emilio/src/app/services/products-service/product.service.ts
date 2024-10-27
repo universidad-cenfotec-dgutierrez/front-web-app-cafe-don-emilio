@@ -21,7 +21,7 @@ export class ProductService {
    * @returns {Promise<Product[]>} Promise with the list of products
    * @author dgutierrez
    */
-  static getAllProducts(): Promise<Product[]> {
+  static async getAllProducts(): Promise<Product[]> {
     if (Constants.modoOffline) {
       return new Promise((resolve) => {
         setTimeout(() => {
@@ -58,9 +58,13 @@ export class ProductService {
         }, 1000);
       });
     } else {
-      return axios.get(
-        `${Constants.appHost}${Constants.apiBaseUrl}${Constants.getAllProducts}`
-      );
+      return (
+        await axios.get(
+          `${
+            Constants.appHost + Constants.apiBaseUrl + Constants.getAllProducts
+          }`
+        )
+      ).data;
     }
   }
 }
