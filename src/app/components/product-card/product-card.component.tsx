@@ -9,7 +9,7 @@ interface ProductCardProps {
     image: string;
   }
 
-export const ProductCard: React.FC<ProductCardProps> = ({ id, name, format, price, image }) => {
+export const ProductCard: React.FC<ProductCardProps> = ({ name, format, price, image }) => {
     return (
     <div className="col-6 col-sm-4 col-md-3 shop-product-container border-shadow">
       <CoffeeCard image={image}></CoffeeCard>

@@ -84,7 +84,7 @@ export const ReservationPage: React.FC = () => {
                         description="Personas mayores de 18 años"
                         price={40}
                         onQuantityChange={(quantity: number) => {
-                            setTickets(prev => updateTickets('Adultos', quantity, 40));
+                            setTickets(_prev => updateTickets('Adultos', quantity, 40));
                         }}
                     />
                     <UserType
@@ -92,7 +92,7 @@ export const ReservationPage: React.FC = () => {
                         description="Personas entre 10 y 18 años"
                         price={30}
                         onQuantityChange={(quantity: number) => {
-                            setTickets(prev => updateTickets('Niños y Jóvenes', quantity, 30));
+                            setTickets(_prev => updateTickets('Niños y Jóvenes', quantity, 30));
                         }}
                     />
                     <UserType
@@ -100,7 +100,7 @@ export const ReservationPage: React.FC = () => {
                         description="Personas menores de 10 años"
                         price={0}
                         onQuantityChange={(quantity: number) => {
-                            setTickets(prev => updateTickets('Bebés y Niños Pequeños', quantity, 0));
+                            setTickets(_prev => updateTickets('Bebés y Niños Pequeños', quantity, 0));
                         }}
                     />
                 </div>
@@ -118,7 +118,7 @@ export const ReservationPage: React.FC = () => {
                         price={20}
                         image="/Almuerzo1.png"
                         onQuantityChange={(quantity: number) => {
-                            setServices(prev => updateServices('Almuerzo típico costarricense', quantity, 20));
+                            setServices(_prev => updateServices('Almuerzo típico costarricense', quantity, 20));
                         }}
                     />
                     <FoodCard
@@ -127,7 +127,7 @@ export const ReservationPage: React.FC = () => {
                         price={20}
                         image="/AlmuerzoVegetariano.png"
                         onQuantityChange={(quantity: number) => {
-                            setServices(prev => updateServices('Almuerzo típico vegetariano', quantity, 20));
+                            setServices(_prev => updateServices('Almuerzo típico vegetariano', quantity, 20));
                         }}
                     />
                 </div>

@@ -1,4 +1,3 @@
-import React from 'react';
 import { FooterComponent, HeaderComponent, LineComponent, ProductCard, TextImage } from '../../components';
 import './shop.component.scss';
 

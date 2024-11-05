@@ -64,7 +64,7 @@ const getDateForDay = (startOfWeek: Date, dayOffset: number): string => {
 
 export const TourScheduler: React.FC<TourSchedulerProps> = ({
   onDateSelect,
-  onTimeSelect
+  //onTimeSelect
 }) => {
   const [currentStartDate, setCurrentStartDate] = useState<Date>(new Date());
   const [selectedDay, setSelectedDay] = useState<string>("SAB");
@@ -131,9 +131,9 @@ export const TourScheduler: React.FC<TourSchedulerProps> = ({
     setCurrentStartDate(getStartOfWeek(newStartDate));
   };
 
-  const handleLanguageChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+ /* const handleLanguageChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedLanguage(event.target.value);
-  };
+  }; */
 
   const isFirstWeek = currentStartDate <= getStartOfWeek(new Date());
   const isLastWeek = currentStartDate >= addMonths(getStartOfWeek(new Date()), 3);
