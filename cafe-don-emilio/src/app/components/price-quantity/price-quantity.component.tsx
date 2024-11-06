@@ -17,7 +17,7 @@ export const PriceContainer: React.FC<PriceContainerProps> = ({ price, increment
           {price === 0 ? 'Gratis' : `$${price}`}
         </span>
       </div>
-      <MinusPlusButtons increment={increment} decrement={decrement} />
+      <MinusPlusButtons increment={increment} decrement={decrement} quantity={0} />
     </div>
   );
 };
