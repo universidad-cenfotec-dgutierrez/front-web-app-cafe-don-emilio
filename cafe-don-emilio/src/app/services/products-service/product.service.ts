@@ -58,13 +58,10 @@ export class ProductService {
         }, 1000);
       });
     } else {
-      return (
-        await axios.get(
-          `${
-            Constants.appHost + Constants.apiBaseUrl + Constants.getAllProducts
-          }`
-        )
-      ).data;
+      const { data } = await axios.get(
+        `${Constants.appHost}${Constants.apiBaseUrl}${Constants.getAllProducts}`
+      );
+      return data.map(Product.desdeJson);
     }
   }
 }

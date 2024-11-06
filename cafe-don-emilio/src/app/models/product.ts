@@ -29,4 +29,14 @@ export class Product {
 
     Object.assign(this, values);
   }
+
+  static desdeJson(json: any): Product {
+    return new Product({
+      id: parseInt(json.id),
+      name: json.name,
+      price: parseFloat(json.price),
+      format: json.format,
+      image: json.image,
+    });
+  }
 }
