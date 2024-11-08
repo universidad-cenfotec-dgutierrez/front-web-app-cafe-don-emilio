@@ -46,11 +46,6 @@ export const HeaderComponent = () => {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link texto-sm-1 fw-normal" to="#">
-                                    Preguntas frecuentes
-                                </Link>
-                            </li>
-                            <li className="nav-item">
                                 <Link className="nav-link texto-sm-1 fw-normal" to={PagesUrlsEnum.SHOP}>
                                     Tienda de café
                                 </Link>
