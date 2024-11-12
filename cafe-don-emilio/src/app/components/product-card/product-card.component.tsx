@@ -16,17 +16,21 @@ export const ProductCard: React.FC<ProductCardProps> = ({ id, name, format, pric
   const [quantity, setQuantity] = useState(1); // Inicializa quantity a 1
   const [showAlert, setShowAlert] = useState(false); // Estado para la alerta
 
+  // Función para manejar el cambio de cantidad
   const handleQuantityChange = (newQuantity: number) => {
-    setQuantity(newQuantity);
+    if (newQuantity > 0) {
+      setQuantity(newQuantity);
+    }
   };
 
+  // Función para agregar el producto al carrito
   const handleAddToCart = () => {
     if (cartContext) {
       cartContext.dispatch({
         type: 'ADD_ITEM',
-        payload: { id, name, price, quantity },
+        payload: { id, name, price, format, image, quantity },
       });
-      setQuantity(1); // Reiniciar quantity a 1 después de añadir al carrito
+      setQuantity(1); // Reiniciar la cantidad a 1 después de añadir al carrito
       setShowAlert(true); // Mostrar la alerta
 
       // Ocultar la alerta después de 2 segundos
@@ -42,7 +46,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ id, name, format, pric
       <div className='product-info'>
         <div className='d-flex justify-content-between'>
           <p className='fw-500'>{name} <br /><small className='fw-light'>{format}</small></p>
-          <p className='fw-500 '>{price}$</p>
+          <p className='fw-500'>{price}$</p>
         </div>
         <div className='plus-minus-container'>
           <MinusPlusButtons 

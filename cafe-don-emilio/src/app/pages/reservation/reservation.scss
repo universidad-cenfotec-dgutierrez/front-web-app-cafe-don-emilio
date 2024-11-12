@@ -1,40 +1,53 @@
+.container.pt-5 {
+  padding-top: 3rem;
+}
 
-.coffee-products {
-    width: 100%;
-  }
-  
-  .coffee-container {
-    width: 35%;
-    height: 10%;
-  }
-  
-  .coffee-details {
-    width: 150%;
-  }
-  
-  
-  .btn.btn-md-imp.btn-secondary.reserve-now-btn.color-light.d-flex.me-3.rounded-5.tour-list-btn.tour-list-btn-popup {
-    width: 80%!important;
-    padding: 7px!important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    margin: 0 auto;
-    font-weight: 400;
- 
-  }
-  
-  .coffee-product {
-    width: 48%;
-  }
-  
-  .margin {
-    margin-right: 8%;
-  }
-  
-  
-  .coffee-container {
-    margin: 0;
-    padding: 6% !important;
-  }
+.btn.btn-primary.mt-4 {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #20483F;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.btn.btn-primary.mt-4:hover {
+  background-color: #1b3e34;
+}
+
+.confirmation-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.confirmation-card h3 {
+  font-size: 1.5rem;
+  color: #20483F;
+  margin-bottom: 15px;
+}
+
+.confirmation-card ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.confirmation-card li {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.page-container {
+  padding-bottom: 60px;
+}

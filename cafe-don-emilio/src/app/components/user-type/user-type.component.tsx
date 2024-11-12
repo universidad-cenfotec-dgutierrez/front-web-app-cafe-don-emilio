@@ -4,10 +4,10 @@ import './user-type.component.scss';
 import { PriceContainer } from '../price-quantity';
 
 interface UserTypeProps {
-  type: string; // Add the 'type' prop
+  type: string;
   description: string;
   price: number | string;
-  onQuantityChange: (quantity: number) => void; // Add the 'onQuantityChange' callback
+  onQuantityChange: (quantity: number) => void; // Prop for updating quantity in parent
 }
 
 export const UserType: React.FC<UserTypeProps> = ({ type, description, price, onQuantityChange }) => {
@@ -15,15 +15,15 @@ export const UserType: React.FC<UserTypeProps> = ({ type, description, price, on
 
   const increment = () => {
     const newQuantity = quantity + 1;
-    setQuantity(newQuantity);
-    onQuantityChange(newQuantity); // Call the callback when quantity changes
+    setQuantity(newQuantity); // Update the local state
+    onQuantityChange(newQuantity); // Pass the new quantity to the parent
   };
 
   const decrement = () => {
     const newQuantity = quantity - 1;
-    if (newQuantity >= 0) {
+    if (newQuantity >= 0) { // Prevent negative quantity
       setQuantity(newQuantity);
-      onQuantityChange(newQuantity); // Call the callback when quantity changes
+      onQuantityChange(newQuantity); // Pass the new quantity to the parent
     }
   };
 
@@ -40,7 +40,12 @@ export const UserType: React.FC<UserTypeProps> = ({ type, description, price, on
           <small className='description-text'>{description}</small>
         </div>
       </div>
-      <PriceContainer price={price} increment={increment} decrement={decrement} />
+      <PriceContainer
+        price={price}
+        increment={increment}
+        decrement={decrement}
+        quantity={quantity}
+      />
     </div>
   );
 };

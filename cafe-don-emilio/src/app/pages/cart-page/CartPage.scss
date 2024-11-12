@@ -9,6 +9,7 @@
     h2 {
         margin-bottom: 1.5rem;
         text-align: center;
+        color: #333;
     }
 
     .list-group {
@@ -21,6 +22,7 @@
 
     .form-label {
         font-weight: bold;
+        color: #333;
     }
 
     .quantity-input {
@@ -51,6 +53,14 @@
 
     .btn-primary {
         padding: 0.5rem 1.5rem;
+        background-color: #20483F;
+        border: none;
+        color: white;
+        transition: background-color 0.2s ease-in-out;
+        
+        &:hover {
+            background-color: #1b3e34;
+        }
     }
 
     .total-price {
@@ -62,6 +72,32 @@
 
     .alert {
         margin-top: 1rem;
+    }
+
+    .cart-item-image {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-right: 1rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .cart-item-info {
+        display: flex;
+        align-items: center;
+    }
+
+    .cart-item-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cart-item-details p {
+        margin: 0;
+        color: #555;
+        font-size: 0.9rem;
     }
 }
 

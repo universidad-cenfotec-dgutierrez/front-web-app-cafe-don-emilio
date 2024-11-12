@@ -2,9 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Popup } from '../booking-popup'; 
 import "./confirmation-cart.component.scss"
 
-// Helper functions to format date and time remain unchanged
-const formatDate = (dateString: string) => {
+// Helper functions to format date and time
+const formatDate = (dateString: string | undefined) => {
+  if (!dateString) return "Fecha por confirmar";
   const date = new Date(dateString);
+  if (isNaN(date.getTime())) return "Fecha por confirmar";
+
   const daysOfWeek = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
   const months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
   const dayOfWeek = daysOfWeek[date.getDay()];
@@ -14,18 +17,20 @@ const formatDate = (dateString: string) => {
   return `${dayOfWeek}, ${day} de ${month} del ${year}`;
 };
 
-const formatTime = (timeString: string) => {
+const formatTime = (timeString: string | undefined) => {
+  if (!timeString) return "Hora por confirmar";
   const [hourStr, minuteStr] = timeString.split(':');
   const hour = parseInt(hourStr, 10);
   const minute = parseInt(minuteStr, 10);
+  if (isNaN(hour) || isNaN(minute)) return "Hora por confirmar";
   const period = hour >= 12 ? 'PM' : 'AM';
   const formattedHour = hour % 12 || 12;
   return `${formattedHour}:${minute.toString().padStart(2, '0')} ${period}`;
 };
 
 interface ConfirmationCardProps {
-  date: string;
-  hour: string;
+  date?: string;
+  hour?: string;
   tickets: { type: string; quantity: number; price: number }[];
   services: { name: string; quantity: number; price: number }[];
 }
@@ -52,7 +57,6 @@ export const ConfirmationCard: React.FC<ConfirmationCardProps> = ({
     setTotal(totalEntries + totalServices);
   }, [tickets, services]);
 
-  // Handle opening the popup and set reservation details
   const handleAddToCartClick = () => {
     setReservationDetails({
       date: formatDate(date),
@@ -82,7 +86,7 @@ export const ConfirmationCard: React.FC<ConfirmationCardProps> = ({
             <span className='product-span dotted-line'>${entry.quantity * entry.price}</span>
           </div>
         ))}
-        <h6 className='price-element' >Servicios adicionales</h6>
+        <h6 className='price-element'>Servicios adicionales</h6>
         {services.map((service, index) => (
           <div key={index} className="d-flex justify-content-between">
             <span className='product-span'>{service.name} x{service.quantity}</span>
@@ -95,18 +99,18 @@ export const ConfirmationCard: React.FC<ConfirmationCardProps> = ({
         </div>
         <div className="mt-3 d-flex justify-content-between">
           <button className="btn btn-outline-secondary cart-btns edit-btn" onClick={handleEditClick}>Editar selección</button>
-          <button className="btn btn-secondary cart-btns" onClick={handleAddToCartClick}>
+          {/* <button className="btn btn-secondary cart-btns" onClick={handleAddToCartClick}>
             Añadir al carrito
-          </button>
+          </button> */}
         </div>
-              {/* Render Popup if showPopup is true and pass reservation details */}
-      {showPopup && reservationDetails && (
-        <Popup
-          show={showPopup}  
-          reservation={reservationDetails}
-          onClose={handleClosePopup}
-        />
-      )}
+        {/* Render Popup if showPopup is true and pass reservation details */}
+        {showPopup && reservationDetails && (
+          <Popup
+            show={showPopup}  
+            reservation={reservationDetails}
+            onClose={handleClosePopup}
+          />
+        )}
       </div>
     </div>
   );
