@@ -59,9 +59,9 @@ export class ProductService {
       });
     } else {
       const { data } = await axios.get(
-        `${Constants.appHost}${Constants.apiBaseUrl}${Constants.getAllProducts}`
+        `${Constants.fullUrlParcial}${Constants.getAllProducts}`
       );
-      return data.map(Product.desdeJson);
+      return data.data.map(Product.desdeJson);
     }
   }
 }
