@@ -6,9 +6,10 @@ interface PriceContainerProps {
   price: number | string;
   increment: () => void;
   decrement: () => void;
+  quantity: number; // Asegúrate de que quantity sea una propiedad
 }
 
-export const PriceContainer: React.FC<PriceContainerProps> = ({ price, increment, decrement }) => {
+export const PriceContainer: React.FC<PriceContainerProps> = ({ price, increment, decrement, quantity }) => {
   return (
     <div className="d-flex flex-row align-items-center main-price-container">
       <div className="d-flex flex-column price-container">
@@ -17,9 +18,7 @@ export const PriceContainer: React.FC<PriceContainerProps> = ({ price, increment
           {price === 0 ? 'Gratis' : `$${price}`}
         </span>
       </div>
-      <MinusPlusButtons increment={increment} decrement={decrement} quantity={0} />
+      <MinusPlusButtons increment={increment} decrement={decrement} quantity={quantity} />
     </div>
   );
 };
-
-
